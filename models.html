@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW-Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+        <nav id="navbar"> 
+          <h2>BMW Dealership</h2>
+            <ul>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="models.html">Models</a></li>
+                <li><a class="nav-link" href="services.html">Services</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-btn">Light Mode</button>
+        </nav>
+        <div class="header-content">
+            <h1>BMW Models</h1>
+            <p class="lead">Explore our range of premium BMW vehicles</p>
+        </div>
+    </header> 
+    <section class="row">
+        <div class="car-card">
+            <span class="badge">2025</span>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_M4_(G82)_IMG_4183.jpg?width=800"
+                alt="2025 BMW M4 Competition">
+            <h2>BMW M4 Competition</h2>
+            <p>Year: 2025</p>
+            <p class="price">$81,375</p>
+            <button onclick="highlightCar(this)">Highlight</button>
+        </div>
+        <div class="car-card">
+            <span class="badge">2025</span>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_M3_Competition_(G80)_IMG_1176.jpg?width=800"
+                alt="2025 BMW M3 Competition">
+            <h2>BMW M3 Competition</h2>
+            <p>Year: 2025</p>
+            <p class="price">$79,575</p>
+            <button onclick="highlightCar(this)">Highlight</button>
+        </div>
+        <div class="car-card">
+            <span class="badge">2020</span>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW-i8.JPG?width=800" alt="2020 BMW i8">
+            <h2>BMW i8</h2>
+            <p>Year: 2020</p>
+            <p class="price">$147,500</p>
+            <button onclick="highlightCar(this)">Highlight</button>
+        </div>
+
+        <div class="car-card">
+            <span class="badge">2025</span>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_X5_G05_002.jpg?width=800"
+                alt="2025 BMW X5">
+            <h2>BMW X5</h2>
+            <p>Year: 2025</p>
+            <p class="price">$68,000</p>
+            <button onclick="highlightCar(this)">Highlight</button>
+        </div>
+
+        <div class="car-card">
+            <span class="badge">2025</span>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_G07_X7_M60i_DSC_8564.jpg?width=800"
+                alt="2025 BMW X7">
+            <h2>BMW X7</h2>
+            <p>Year: 2025</p>
+            <p class="price">$85,000</p>
+            <button onclick="highlightCar(this)">Highlight</button>
+        </div>
+
+
+    </section>
+    <section class="section-box">
+        <div class="row">
+            <div class="box">
+                <h3>Budget Checker</h3>
+                <p>Type your budget to see what you can buy:</p>
+                <label for="budget-input">Budget ($):</label>
+                <input type="number" id="budget-input" placeholder="e.g. 80000">
+                <button id="budget-btn">Check Budget</button>
+                <p id="budget-result">Your budget will be displayed here.</p>
+            </div>
+
+            <div class="box">
+                <h3>Model Price List</h3>
+                <ul id="model-list"></ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html> 
