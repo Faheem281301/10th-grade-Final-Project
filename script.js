@@ -91,3 +91,27 @@ for (let i = 0; i < cars.length; i++) {
     console.log(cars[i]);
 }
 
+let index = 0;
+let totalModels = 0;
+
+while (index < cars.length) {
+    totalModels++;
+    index++;
+}
+
+if (modelList) {
+    modelList.innerHTML += "<li>Total models: " + totalModels + "</li>";
+}
+
+function selectPhoto(card) {
+    let bigImg = document.getElementById("big-img");
+    let bigTitle = document.getElementById("big-title");
+
+    let smallImg = card.querySelector("img");
+    let smallText = card.querySelector("p");
+
+    bigImg.src = smallImg.src;
+    bigTitle.innerText = smallText.innerText;
+}
+
+

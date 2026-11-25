@@ -14,21 +14,59 @@
             <ul>
                 <li><a class="nav-link" href="index.html">Home</a></li>
                 <li><a class="nav-link" href="models.html">Models</a></li>
-                <li><a class="nav-link" href="services.html">Services</a></li>
+                <li><a class="nav-link" href="gallery.html">Gallery</a></li>
                 <li><a class="nav-link" href="contact.html">Contact</a></li>
+                <li><a class="nav-link" href="FAQ.html">FAQ</a></li>
+                <li><a class="nav-link" href="NEWS.html">News</a></li>
             </ul>
             <button id="theme-btn">Light Mode</button>
         </nav>
         <div class="header-content">
-            <h1>BMW Models</h1>
-            <p class="lead">Explore our range of premium BMW vehicles</p>
+            <h1>Contact &amp; Test Drive</h1>
+            <p class="lead">Fill out the form below to book a BMW test drive.</p>
         </div>
     </header>   
-    
+    <section class="section-box">
+        <div class="row">
+            <div class="box">
+                <h3>Book a Test Drive</h3>
+                <label for="name-input">Your Name:</label>
+                <input type="text" id="name-input" placeholder="Enter your name">
+                <label for="email-input">Your Email:</label>
+                <input type="email" id="email-input" placeholder="Enter your email">
+
+                <label for="model-select">Pick a BMW:</label>
+                <select id="model-select">
+                    <option value="BMW M4 Competition">BMW M4 Competition</option>
+                    <option value="BMW M3 Competition">BMW M3 Competition</option>
+                    <option value="BMW i8">BMW i8</option>
+                    <option value="BMW X5">BMW X5</option>
+                    <option value="BMW X7">BMW X7</option>
+                </select>
+
+                <label for="notes-input">Message:</label>
+                <textarea id="notes-input" rows="4" placeholder="Any questions?"></textarea>
+
+                <button id="submit-btn">Book Now</button>
+                <p id="form-msg"></p>
+            </div>
+
+            <div class="box">
+                <h3>Dealership Info</h3>
+                <p><strong>Address:</strong> 001 126th Street</p>
+                <p><strong>Phone:</strong> (317) 676-6767</p>
+                <p><strong>Email:</strong> customercare@bmw.com</p>
+                <p><strong>Hours:</strong> Mon-Sat 9am - 6pm</p>
+            </div>
+        </div>
+    </section>
 
 
 
-    
+     <footer class="footer">
+        <p>Final Project - 2026</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html> 
